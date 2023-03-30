@@ -5,11 +5,16 @@ import Modal from "../Modal/Modal";
 
 const Card = () => {
   const [data, setData] = useState([]);
-
+  const [uniqueId, setUniqueId] = useState(null);
   const [showAll, setShowAll] = useState(true);
+
   const handleShowAll = () => {
     setShowAll(false);
   };
+
+  useEffect( () => {
+    fetch(``)
+  },[])
 
   useEffect(() => {
     fetch("https://openapi.programming-hero.com/api/ai/tools")
@@ -20,7 +25,11 @@ const Card = () => {
     <React.Fragment>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-6">
         {data.slice(0, showAll ? 6 : 12).map((singleData) => (
-          <Data key={singleData.id} singleData={singleData}></Data>
+          <Data 
+          key={singleData.id} 
+          singleData={singleData}
+          setUniqueId={setUniqueId}
+          ></Data>
         ))}
       </div>
 

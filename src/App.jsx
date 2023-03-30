@@ -10,7 +10,6 @@ const App = () => {
       <Header />
       <Button>Sort By Date</Button>
       <Card />
-      <Modal/>
     </React.Fragment>
   );
 };

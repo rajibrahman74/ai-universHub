@@ -1,8 +1,8 @@
 import React from "react";
 
 const Data = (props) => {
-  //   console.log(props.singleData);
-  const { image, features, published_in, name } = props.singleData;
+  const { id, image, features, published_in, name } =
+    props.singleData;
   return (
     <React.Fragment>
       <div className="card w-96 mx-auto bg-base-100 shadow-2xl">
@@ -40,7 +40,11 @@ const Data = (props) => {
             </div>
 
             <div className="card-actions justify-end">
-              <label htmlFor="my-modal-5" className="cursor-pointer">
+              <label
+                onClick={() => props.setUniqueId(id)}
+                htmlFor="my-modal-5"
+                className="cursor-pointer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
