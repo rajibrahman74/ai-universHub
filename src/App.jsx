@@ -1,10 +1,16 @@
 import React from "react";
+import Button from "./components/Button/Button";
+import Card from "./components/Card/Card";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-center font-bold text-3xl">AI Universe Hub</h1>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Button>Sort By Date</Button>
+      {/* <Button>See More</Button> */}
+      <Card/>
+    </React.Fragment>
   );
 };
 
