@@ -8,8 +8,7 @@ const App = () => {
     <React.Fragment>
       <Header />
       <Button>Sort By Date</Button>
-      {/* <Button>See More</Button> */}
-      <Card/>
+      <Card />
     </React.Fragment>
   );
 };

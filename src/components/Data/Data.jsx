@@ -17,7 +17,7 @@ const Data = (props) => {
               {index + 1}. {feature}
             </p>
           ))}
-          <hr className="border-2 border-info" />
+          <hr className="border-1.5 border-error" />
           <h1 className="card-title font-bold">{name}</h1>
 
           <div className="flex justify-between pt-3">
