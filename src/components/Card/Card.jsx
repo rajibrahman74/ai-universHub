@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import Data from "../Data/Data";
+import Modal from "../Modal/Modal";
 
 const Card = () => {
   const [data, setData] = useState([]);
@@ -28,6 +29,7 @@ const Card = () => {
           <Button>See More</Button>
         </span>
       )}
+      <Modal/>
     </React.Fragment>
   );
 };

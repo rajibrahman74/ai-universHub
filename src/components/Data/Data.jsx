@@ -40,7 +40,7 @@ const Data = (props) => {
             </div>
 
             <div className="card-actions justify-end">
-              <button>
+              <label htmlFor="my-modal-5" className="cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -55,7 +55,7 @@ const Data = (props) => {
                     d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                   />
                 </svg>
-              </button>
+              </label>
             </div>
           </div>
         </div>
