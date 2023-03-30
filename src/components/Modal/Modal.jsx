@@ -22,7 +22,11 @@ const Modal = (props) => {
                 </div>
 
                 <div>
-                  <h3 className="card-title">Integrations</h3>
+                  <h1 className="text-xl font-bold">Integrations</h1>
+                  {integrations &&
+                    integrations.map((int) => (
+                      <p>{int ? int : "integration not found"}</p>
+                    ))}
                 </div>
               </div>
             </div>
